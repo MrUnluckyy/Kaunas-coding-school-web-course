@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML2 ClassWork</title>
+    </head>
+
+    <body>
+
+        <h1>Media testing</h1>
+        <p>Nuotrauka, video, garsas, YouTube, zemelapiai</p>
+        <hr>
+        <table border="1">
+            <tr>
+                <th>Smiling</th>
+                <th>Future</th>
+                <th colspan="2">Thumbs Up</th>
+              <!--  <th>New Logo</th> -->
+                <th rowspan="2">Lempa</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../1HTML1/mouth-smile-png-clip-art-thumbnail.png" alt="Keep Smiling" title="Keep Smiling" width="200">
+                </td>
+                <td>
+                    <figure>
+                        <img src="./WhatNext.png" alt="Kelias I Ateiti." width="200">
+                        <figcaption>Nuotrauka</figcaption>
+                    </figure>
+                </td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Symbol_thumbs_up.svg" width="200"></td>
+                <td><img src="assets/Images/MyLogo.png" alt="NewLogo" width="200"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Video is kompiuterio</th>
+                <th>Video is interneto</th>
+                <th>Audio is kompiuterio</th>
+                <th>Google zemelapis</th>
+            </tr>
+            <tr>
+                <td>
+                    <video src="assets/video/video.ogg" width="200" controls></video>
+                </td>
+
+                <td>
+                    <iframe width="200" src="https://www.youtube.com/embed/SSoV5gDGeN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+
+                <td>
+                    <audio src="assets/audio/audio.mp3" controls></audio>
+                </td>
+
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.0048521559966!2d23.92057957986579!3d54.90283706478489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7189dd4c5cfaf%3A0xd5d99685ccadf553!2zRHrFq2vFsyBnLiAxMSwgS2F1bmFzIDQ0MTcy!5e0!3m2!1sen!2slt!4v1585934767910!5m2!1sen!2slt" width="200"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <!-- <p> -->
+        <form>
+
+                <fieldset><!-- Padaryti forma sitiems input'ams -->
+                    <table border="0">
+
+                        <tr>
+                            <legend>Asmeninė informacija</legend>
+                            <td><label for="vardas">Vardas:</label></td>
+                            <td><input type="text" placeholder="Vardas" id="vardas"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">El. Paštas:</label></td>
+                            <td><input type="email" id="email" placeholder="Įveskite el. pašto adresą" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Slaptažodis:</label></td>
+                            <td><input type="password" id="password" placeholder="Įveskite savo slaptažodį"></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <table border="1">
+                    <legend>Klausimai</legend>
+
+
+                            <tr>
+                                <td>
+                                    <label for="miestas">Pasirinkite svo gimtaji miesta: </label>
+                                </td>
+
+                                <td>
+                                    <select id="miestas">
+                                        <option>--Miestas--</option>
+                                        <option>Kaunas</option>
+                                        <option>Vilnius</option>
+                                        <option>Oslas</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td colspan="3">
+                                    <label for="lytis">Pasirinkite savo lyti:</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input type="radio" id="vyras" name="Lytis">
+                                    <label for="vyras"> Vyras</label>
+
+
+
+                                    <input type="radio" id="moteris" name="Lytis">
+                                    <label for="moteris">Moteris</label>
+
+
+
+                                    <input type="radio" id="nenurodysiu" name="Lytis">
+                                    <label for="Nenoriu"> Nenoriu</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3"><label for="pasiulymas">Jūsų pasiūlymas:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                   <textarea rows="4" cols="100" placeholder="Įveskite savo pasiūlymą" id="pasiulymas"></textarea>
+                                </td>
+                            </tr>
+
+
+                    <!--
+                        <input value="2020-04-03" readonly>
+                        <input type="date">
+                        <input type="checkbox" name="futbolas" id="futbolas" >
+                        <label for="futbolas">Futbolas</label>
+                        <input type="checkbox" name="PS4" id="PS4" >
+                        <label for="PS4">PS4</label>
+                        <input type="checkbox" name="A" id="A" >
+                        <label for="A">A</label>
+                    -->
+                    </table>
+                </fieldset>
+
+            <input type="submit" value="Siusti">
+
+        </form>
+<!--         </p> -->
+
+
+
+    </body>
+
+</html>
