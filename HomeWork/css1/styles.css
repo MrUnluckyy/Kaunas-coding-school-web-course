@@ -1,0 +1,35 @@
+/*Reseting styles section*/
+body{
+    width: 560px;
+    font-family: sans-serif;
+}
+
+/*End of reseting styles section*/
+
+
+
+
+/*HEADER section*/
+
+/*End of HEADER section*/
+
+
+/*MAIN section*/
+.headings-related-to-potager-topic{
+    color: #ee5291;
+}
+
+.article-selection-of-seedling{
+    width: 490px;
+}
+
+.potager-article-explanation-which-seedlings-to-choose{
+    opacity: 0.6;
+}
+
+/*End of MAIN section*/
+
+
+/*FOOTER section*/
+
+/*End of FOOTER section*/
