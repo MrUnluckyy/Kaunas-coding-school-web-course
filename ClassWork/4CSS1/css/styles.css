@@ -1,0 +1,90 @@
+/*
+ *Reseting Styles
+*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+/*    color: black!important; */
+    color: black;
+    background-color: white;
+}
+/* My custom styles */
+
+/* HEADER section */
+
+#header{
+
+}
+
+#header span.logos .main-logo {
+    height: 60px;
+    width: 120px;
+    }
+
+#header span.logos .main-logo:hover {
+    filter: contrast(0.2);
+
+}
+
+.header-main-menu{
+    font-size: 20px;
+
+
+}
+/* end of HEADER section */
+
+/* MAIN CONTENT section */
+#warning-message {
+    color: darkblue;
+    background-color: yellow;
+}
+
+body div p#third-paragraph.border-red{
+    border: 5px solid blue;
+}
+
+/*body div p.available-in-region{
+ *    color: black;
+*}
+*/
+
+p.available-in-region a {
+    color: black;
+}
+
+p.available-in-region a:hover{
+    color: white;
+    background-color: black:
+}
+
+p:last-child {
+    color: red;
+}
+
+p:last-child a:visited {
+    color: gray;
+}
+/* end of MAIN CONTENT section */
+
+/* FOOTER section */
+
+#footer {
+    height: 400px;
+    background-color: #dae2eb;
+    opacity: 0.6;
+}
+
+
+
+
+
+/* end of FOOTER section */
+
