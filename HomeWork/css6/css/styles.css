@@ -1,0 +1,179 @@
+/* NOTE FOR DEVELOPER: this project is not yet adjusted for mobile or tablet version*/
+
+
+
+/*Reseting styles section*/
+body, h3, input, label {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+input{
+    border-radius: 5px;
+}
+
+.selection-container--reset{
+    margin: 0;
+    padding: 0;
+}
+
+/*End of reseting styles section*/
+
+
+
+/*HEADER section*/
+
+/*End of HEADER section*/
+
+
+
+/*MAIN section*/
+main {
+    background-color:cadetblue;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-form{
+    display: inherit;
+    background-color: white;
+    max-width: 80%;
+    min-height: 50%;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 6px 10px rgba(0, 0, 0, 0.25);
+    overflow:hidden;
+
+
+}
+
+
+
+.main-form__title{
+    flex: 3 100%;
+    height: 8%;
+    padding-top: 5px;
+    font-size: 130%
+
+}
+
+.main-form__logo-block{
+    /* TOFO: Check with Zilvinas, if there is a way to have "main-form__logo-block" height based on main-form__title height (to make 100% of "main-form"*/
+    height: 93%;
+    flex:1;
+    padding: 2px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form__logo-block img{
+    width: 80%;
+
+}
+
+
+.main-form__form-block{
+    flex: 2;
+    text-align:left;
+    height: 90%;
+    font-size: 15px;
+
+
+}
+
+.main-form__user-info{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2% 0;
+    padding: 1% 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.user-info__labels{
+    display: inherit;
+    flex-flow: column;
+    margin-right: 2%;
+}
+.user-info__labels > *{
+    margin: 2% 0;
+}
+
+.user-info__input{
+    display: inherit;
+    flex-flow: column;
+}
+
+.user-info__input > *{
+    margin: 2% 0;
+}
+
+.main-form__questions > *{
+    margin-top: 3%;
+
+}
+
+
+.questions__user-opinion textarea{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px
+}
+
+.questions__user-opinion textarea::placeholder{
+    padding-left: 1%;
+}
+
+.dev-knowledge__selection-container{
+    display: flex;
+}
+
+
+
+.selection-container__cols {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 1%;
+
+}
+
+.main-form__btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.main-form__btn-submit button{
+    width: 50%;
+    background-color: dimgray;
+    color: white;
+    text-transform: uppercase;
+    padding: 3px;
+    margin: 2% auto;
+    border-radius: 10px;
+}
+
+.main-form__btn-submit button:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*End of MAIN section*/
+
+
+
+/*FOOTER section*/
+
+/*End of FOOTER section*/
+
