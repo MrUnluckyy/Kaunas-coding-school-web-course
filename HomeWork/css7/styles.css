@@ -1,0 +1,119 @@
+/*Reseting styles section*/
+body, p{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*End of reseting styles section*/
+
+
+
+/*HEADER section*/
+.month_name {
+    width: 100%;
+    margin: 1% 0 0 5%;
+    font-size: 35px;
+}
+
+/*End of HEADER section*/
+
+
+
+/*MAIN section*/
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.calendar__box {
+    width:90%;
+    height: 800px;
+
+}
+
+.calendar__weekday , .calendar__week{
+    display: flex;
+    width: 100%;
+
+}
+.weekday__name:nth-last-child(-n+2){
+    color: red;
+}
+
+.weekday__name{
+    color: white;
+    background-color: black;
+    flex: 1;
+    text-align: center;
+    margin: 2px;
+
+}
+
+.calendar__day:nth-last-child(-n+2){
+    color: red;
+    background-color: orange;
+}
+.calendar__day{
+    flex: 1;
+    height: 100px;
+    margin: 2px;
+    border: 1px solid gray;
+    padding: 5px 0 5px 3px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.3)
+}
+
+.day__public-event{
+    color: black;
+    width: 100%;
+    height: 17px;
+    background-color: chocolate;
+    font-size: 13px;
+}
+.day__personal-event{
+    color: black;
+    width: 100%;
+    height: 17px;
+    background-color: aquamarine;
+    font-size: 13px;
+}
+
+.calendar__day:hover{
+    background-color: rgba(14, 100, 175, 0.3);
+    border-radius: 5px;
+}
+
+.calendar__day--active{
+    border: 2px solid black;
+}
+
+/*NOTE: Check with Zilvinas why .another-month is not overriding:
+.calendar__day:nth-last-child(-n+2){
+    color: red;
+    background-color: orange;
+*/
+.another-month{
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+
+/*End of MAIN section*/
+
+
+
+/*FOOTER section*/
+
+/*End of FOOTER section*/
