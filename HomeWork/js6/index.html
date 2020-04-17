@@ -89,10 +89,10 @@
         </style>
         -->
 
-
     </head>
 
     <body>
+
         <div class="wrapper">
             <div class="age-verification-container">
                 <h2>Enter your age:</h2>
@@ -104,13 +104,11 @@
         <script>
 
             /* DECLARATIONS */
-            //var userAge = '';
+
             var output = '';
             var userAge = '';
             var userVerified = 'Age limit passed, you can continue.';
             var userUnderAge = 'Ooops, you are not allowed to enter due to age restrictions.';
-
-
 
             /* ACTION / EDITING / ASSIGNING / FUNCTION / CALCS*/
 
@@ -128,19 +126,18 @@
                 }
             }
 
-
              function getUserAge() {
                 userAge = document.getElementById('age-input').value;
             }
 
 
             /* OUTPUT */
+
             function userAgeVerification() {
                 notifyUser()
             }
 
         </script>
-
 
     </body>
 </html>
