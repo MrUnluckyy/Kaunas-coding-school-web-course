@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS8 Namų darbai</title>
+    </head>
+
+    <body>
+        <div>
+            <h2><label for="nespausdinamas-vardas">Vardo kurio nespausdinti</label></h2>
+            <p> Galimi vardai:</p>
+            <p id="galimi-vardai"></p>
+            <input id="nespausdinamas-vardas">
+            <button id="nespausdinamo-vardo-btn" onclick="displayUpdatedArray()">Patvirtinti</button>
+            <hr>
+            <p id="new-array-list"></p>
+        </div>
+
+        <script>
+
+        /* DECLARATIONS */
+            var taskNames = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+
+        /* ACTION / EDITING / ASSIGNING / FUNCTION / CALCS*/
+
+            function deleteNameFromSelectedArray (array, name) {
+                var inputElement = document.getElementById('nespausdinamas-vardas');
+                name = inputElement.value;
+                var nameIdInArray = array.indexOf(name);
+                array.splice(nameIdInArray,1);
+                inputElement.value = '';
+
+            }
+
+
+            function displayArray () {
+                document.getElementById('galimi-vardai').innerHTML = taskNames.join(', ');
+
+            }
+            displayArray();
+
+
+        /* OUTPUT */
+            function displayUpdatedArray(){
+                deleteNameFromSelectedArray(taskNames, name);
+                displayArray();
+
+            }
+
+
+        </script>
+    </body>
+
+</html>
