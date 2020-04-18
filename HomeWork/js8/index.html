@@ -36,7 +36,6 @@
 
             function displayArray () {
                 document.getElementById('galimi-vardai').innerHTML = taskNames.join(', ');
-
             }
             displayArray();
 
@@ -44,6 +43,7 @@
         /* OUTPUT */
             function displayUpdatedArray(){
                 deleteNameFromSelectedArray(taskNames, name);
+                console.log(taskNames);
                 displayArray();
 
             }
