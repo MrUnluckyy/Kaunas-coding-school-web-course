@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS13 photo gallery</title>
+        <style>
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .photo-with-style{
+                width: 200px;
+                margin: 5px;
+            }
+
+            @media only screen and (max-width: 600px){
+                .photo-with-style{
+                    width: 100%;
+                }
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <h1>Gallery</h1>
+            <div class="container">
+
+            </div>
+        </div>
+
+        <script>
+        var imagesSrc = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
+
+        //NOTE: imageAlt it would be better to add alt text to images array and make it multilevel
+        var imageAlt = ['bycycle and dog on sunset', 'chess game', 'skydivers jumping of the plane', 'person kitting', 'lion with kids', ' goat and person onwater', 'paradiving', 'young photographer', 'girl in the field', 'kids on swings'];
+
+
+        function addImagesToContainer () {
+
+            for (var i=0; i < imagesSrc.length; i++){
+                var newImage = document.createElement('img');
+                var targetedContainer = document.getElementsByClassName('container')[0];
+                newImage.setAttribute('src',imagesSrc[i]);
+                newImage.setAttribute('alt', 'Photo of ' + imageAlt[i]);
+                newImage.setAttribute('class', 'photo-with-style');
+                targetedContainer.appendChild(newImage);
+            };
+        };
+        addImagesToContainer();
+
+        </script>
+    </body>
+
+
+</html>
