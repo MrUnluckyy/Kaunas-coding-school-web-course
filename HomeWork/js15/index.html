@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS15 ND Prekės įdėjimas</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            .new-item{
+                color: green;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Naujos prekės įkelimas</h1>
+
+        <button id="submit-new-item-btm">Įkelti</button>
+
+        <div id="new-item-container">
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script>
+
+            $(document).ready (function () {
+                /* DECLARATIONS */
+                var $dataOutput = $('#new-item-container')
+                var $item = {
+                    title: "Nešiojamas kompiuteris",
+                    description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+                    discount: 30,
+                    isItNew: true,
+                    color: 0,
+                    price: 699.00,
+                    currency: "EUR"
+                };
+                var selectedColor;
+                var output = '<table>';
+
+                /* ACTION / EDITING / ASSIGNING / FUNCTION / CALCS*/
+                function createTableWithItemData() {
+
+                    let title = $item.title;
+                    let description = $item.description;
+                    let discout = $item.discount + ' &percnt;';
+                    let price = $item.price + $item.currency;
+                    let newItem = $item.isItNew;
+
+                    output += '<tr><th colspan = 2>' + title + '</th></tr>';
+                    output += '<tr><td>Aprašymas: </td><td>' + description + '</td></tr>';
+                    output += '<tr><td>Spalva: </td><td><select id="item-color"><option value=0>Juoda</option><option value=1>Raudona</option><option value=2>Žalia</option><option value=3>Sidabrinė</option></select></td></tr>'
+                    output += '<tr><td>Nuolaida: </td><td>' + discout + '</td></tr>';
+                    output += '<tr><td>Kaina: </td><td>' + price + '</td></tr>';
+                    output += '</table>'
+
+                    $dataOutput.html(output);
+
+                    if (newItem) {
+                        $('table').addClass('new-item');
+                    }
+
+                };
+
+
+
+                /*Note: this function is used to get user selected color (value) for item.
+                function itemColorIdentification(){
+                    $('select#item-color').change(function () {
+                        var selectedItemColor = $(this).children("option:selected").val();
+                    });
+                };
+                */
+
+                /* OUTPUT */
+                $('button').click(function (){
+                    createTableWithItemData ();
+
+                });
+
+            });
+
+        </script>
+
+
+
+    </body>
+</html>
