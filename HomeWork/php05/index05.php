@@ -47,5 +47,5 @@
         <li>Šalis: {$outputc3[2]}</li>
         </ul>
         "
-    ?>
+?>
 
