@@ -1,0 +1,26 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-wrapper{
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.text-about-artist{
+    overflow: hidden;
+    text-align: justify;
+}
+
+.social-media{
+    margin-top: 10px;
+    flex: 2 100%;
+    text-align: center;
+}

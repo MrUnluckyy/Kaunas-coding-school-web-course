@@ -1,0 +1,139 @@
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-project-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5em;
+}
+
+.about-project__img{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-project__img-rows{
+    display: flex;
+}
+
+.about-project__img--column{
+    width: 50%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-project__img--styled--column{
+    margin: 3px 0;
+}
+
+.about-project__img--styled--inline{
+    width: 50%;
+    height: 40em;
+    margin: 0 3px;
+}
+
+.about-project__img--styled--cube{
+    margin:3px;
+    width: 350px;
+    height: 350px;
+
+}
+
+/*Project related pictures for each format*/
+
+/*SUMMER 2020 project pictures*/
+.about-project__img-column-top{
+    background: url(/assets/colaiptine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+.about-project__img-column-bottom{
+    background: url(/assets/dvirkai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+/*SUMMER 2020 project pictures*/
+.about-project__img-inline-left{
+    background: url(/assets/nida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+.about-project__img-inline-right{
+    background: url(/assets/pajurys.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+/*ELECTIONS project pictures*/
+.about-project__img-cube-top-left {
+    background: url(/assets/nauseda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__img-cube-top-right{
+    background: url(/assets/ingrida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__img-cube-bottom-left{
+    background: url(/assets/ingrida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__img-cube-bottom-right{
+    background: url(/assets/nauseda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*STICKERS project pictures*/
+.about-project__sticker-img-cube-top-left {
+    background: url(/assets/stickers1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__sticker-img-cube-top-right{
+    background: url(/assets/stickers2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__sticker-img-cube-bottom-left{
+    background: url(/assets/stickers3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-project__sticker-img-cube-bottom-right{
+    background: url(/assets/stickers1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*END OF Project related pictures for each format*/
+
+.about-project__text{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 0 0.5em
+}
+
+

@@ -1,0 +1,51 @@
+
+/*Header section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    text-transform: lowercase;
+    background-color: white;
+    height: 5vh;
+    color: gray;
+    font-size: 18px;
+}
+
+.main-logo{
+    width: 30%;
+}
+
+.nav__items li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav .nav__items li a{
+    transition: all 0.5s ease 0s;
+    position: relative;
+}
+
+nav .nav__items li a::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    bottom: 50%;
+    width: 50%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in;
+}
+
+nav .nav__items li a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+
+/*End of HEADER section*/
