@@ -10,7 +10,6 @@
     position: relative;
     width: 250px;
     height: 300px;
-    background-color: cadetblue;
     margin: 3px;
     box-sizing: border-box;
 
@@ -22,8 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
-    color: white;
+    color: black;
     top: 0;
     left: 0;
     right: 0;
@@ -33,23 +31,29 @@
     opacity: 0;
 }
 
+.selling-item:hover.selling-item img{
+    filter: opacity(30%);
+    transition: all 2s ease 0s;
+}
+
 .selling-item__content:hover {
     opacity: 1;
     transition: all 2s ease 0s;
 }
 
+
+
 .selling-item__heart {
     position: absolute;
     top: 0;
     right: 5px;
-    color: white;
+    color: black;
     opacity: 1;
     font-size: 20px;
 
 }
 
 .selling-item__heart:hover {
-    color: red;
     font-size: 22px;
     transition: all 1s ease 0s;
 }
@@ -58,7 +62,7 @@
     position: absolute;
     top: 0;
     right: 35px;
-    color: white;
+    color: black;
     opacity: 1;
     font-size: 20px;
 }

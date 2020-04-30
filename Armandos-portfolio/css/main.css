@@ -12,6 +12,7 @@
 
 .projects-cover-container{
     height: 90vh;
+    margin: 0 5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -45,13 +46,15 @@
 }
 
 .project-cover-img__client-name{
-    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
     width: 50%;
-    text-align: center;
+    text-align:center;
+    font-size: 15px;
 }
 
 .project-cover-img__title{
-    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    font-size: 25px;
     width: 100%;
     text-align: center;
     margin: 5px 0;
@@ -71,7 +74,7 @@
 
 
 #project-cover-nida:hover .project-cover-content__illustration{
-    filter: grayscale();
+    filter: opacity(30%);
     opacity: 0.8;
     transition: all 2s ease 0s;
 }
@@ -95,12 +98,12 @@
 }
 
 #project-cover-quorantine:hover .project-cover-content__illustration{
-    filter: grayscale();
+    filter: opacity(30%);
     opacity: 0.8;
     transition: all 2s ease 0s;
 }
 
-#project-cover-quorantine:hover > .project-cover-img__text{
+#project-cover-quorantine:hover .project-cover-img__text{
     opacity: 1;
     transition: all 2s ease 0s;
 
@@ -116,12 +119,12 @@
 }
 
 #project-cover-stickers:hover .project-cover-content__illustration{
-    filter: grayscale();
+    filter: opacity(30%);
     opacity: 0.8;
     transition: all 2s ease 0s;
 }
 
-#project-cover-stickers:hover > .project-cover-img__text{
+#project-cover-stickers:hover .project-cover-img__text{
     opacity: 1;
     transition: all 2s ease 0s;
 
@@ -136,13 +139,13 @@
     width: 100%;
 }
 
-#project-cover-elections:hover > .project-cover-img__text{
+#project-cover-elections:hover .project-cover-img__text{
     opacity: 1;
     transition: all 2s ease 0s;
 }
 
 #project-cover-elections:hover .project-cover-content__illustration{
-    filter: grayscale();
+    filter: opacity(30%);
     opacity: 0.8;
     transition: all 2s ease 0s;
 }
