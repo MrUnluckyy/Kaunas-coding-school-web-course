@@ -150,7 +150,20 @@
     transition: all 2s ease 0s;
 }
 
+@media screen and (max-width: 600px) {
+    .projects-cover-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: auto;
 
+    }
+
+    #project-cover-nida img{
+        width: 100%;
+    }
+
+}
 
 /*End of MAIN section*/
 

@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Justas Sobutas">
-        <meta name="description" content="Contact Armanda Cepaite for colaboration or questions regarding art or specific illustration">
+        <meta name="description" content="Armanda Capaite eshop with various high quality and creative posters, stickers and other merchandise">
         <meta name="keywords" content="illustations, art, paint, design, logos, projects, armanda, capaite" >
 
-        <title>Armanda Cepaite | About</title>
+        <title>Armanda Cepaite | Shop</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&display=swap" rel="stylesheet">
         <link href="css/global.css" rel="stylesheet">
@@ -24,12 +24,29 @@
                 </div>
 
                 <nav>
-                    <ul class="nav__items">
+                    <ul class="nav__items nav__items--hiiden">
                         <li><a href="index.html">Projects</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li>+</li>
                     </ul>
+                    <div class="nav-burger-menu">
+                        <img class="nav-burger-menu__icon" src="assets/burger-menu.svg">
+                        <div class="nav-burger-menu__content">
+                            <ul>
+                                <li><a href="index.html">Projects</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav__social-media-dropdown">
+                        <button class="nav__social-media-dropdown-btn">social</button>
+                        <div class="nav__social-media-dropdown-content">
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
 
                 </nav>
             </header>
@@ -299,9 +316,10 @@
             </div>
 
         <script>
-            //TODO: figure out better JS for load more
+            //TODO: add arrays for item details;
 
 
+            //Show more function
             function showMoreItems() {
                 var hiddenItems = document.querySelectorAll('.selling-item--hidden');
                 if (hiddenItems.length == 0){
@@ -311,10 +329,6 @@
                     hiddenItems[i].classList.remove('selling-item--hidden');
                     }
                 }
-
-
-
-
             }
 
 
@@ -323,6 +337,7 @@
                 window.scrollBy(0, 2000);
 
             });
+            //End of show more function
 
 
         </script>

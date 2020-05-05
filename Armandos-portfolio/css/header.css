@@ -1,3 +1,9 @@
+/*TODO:
+* o create animated logo when entering page
+* o create nice transition for social drop down menu.
+*
+*/
+
 
 /*Header section*/
 header{
@@ -15,6 +21,10 @@ header{
 
 .main-logo{
     width: 30%;
+}
+
+nav {
+    display: flex;
 }
 
 .nav__items li{
@@ -45,8 +55,97 @@ nav .nav__items li a:hover::after{
     transform: scaleX(1);
 }
 
+.nav-burger-menu{
+    display: none;
+}
+
+.nav__social-media-dropdown{
+    position: relative;
+}
+
+.nav__social-media-dropdown-btn{
+    border: none;
+    font-family: inherit;
+    color: gray;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav__social-media-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 200px;
+    z-index: 1;
+}
+
+.nav__social-media-dropdown-content a{
+    color: gray;
+    display: block;
+    margin: 10px auto 10px 10px;
+}
+
+.nav__social-media-dropdown-content a:hover{
+    color: rgba(0, 0, 0, 1);
+}
+
+.nav__social-media-dropdown:hover .nav__social-media-dropdown-content{
+    display: block;
+}
 
 
+@media screen and (max-width: 600px){
+    .nav__items--hiiden{
+        display: none;
+    }
 
+    nav{
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .nav-burger-menu{
+        position: relative;
+        display: block;
+        color: red;
+        cursor: pointer;
+    }
+
+    .nav-burger-menu__icon{
+        width: 15%;
+    }
+
+    .nav-burger-menu__content{
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        min-width: 200px;
+        z-index: 1;
+    }
+    .nav-burger-menu__content a{
+        color: gray;
+        display: block;
+        margin: 10px auto 10px 10px;
+    }
+
+    .nav-burger-menu:hover .nav-burger-menu__content{
+        display: block;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-burger-menu__content a:hover{
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .nav__social-media-dropdown:hover .nav__social-media-dropdown-content{
+        display: block;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+}
 
 /*End of HEADER section*/

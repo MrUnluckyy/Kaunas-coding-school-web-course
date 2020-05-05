@@ -1,28 +1,102 @@
 main{
-    width: 100%;
+    height: 80vh;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: 0 5em;
+
 }
 
 .main-wrapper{
-    width: 70%;
-    height: 80vh;
-    display: flex;
+    width: 100%;
     text-align: justify;
+    display: flex;
+    justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .text-about-artist{
     overflow: hidden;
+    flex: 1 100%;
+}
+
+.text-about-artist__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.text-about-artist__header-logo{
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.text-about-artist__paragraph{
     text-align: justify;
 }
 
-.social-media{
-    margin-top: 10px;
-    flex: 2 100%;
+
+/* TODO: show when this class will be fixed in HTML.
+.about-artist__achievements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: gray;
+    margin: 1em 0;
+    font-size: 12px;
+}
+*/
+
+.contact-me-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background: black;
+    align-items: center;
+    width: 100%;
+}
+
+form > *{
+    margin: 5px;
+    width: 50%;
+    border-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.contact-me__send-form-btn{
+    background-color: rgba(0, 0, 0, 1);
     color: white;
+    width: 10%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.contact-me__send-form-btn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    width: 11%;
+    transition: 2s ease;
+}
+
+
+@media screen and (max-width: 600px) {
+    .contact-me-container{
+        justify-content: center;
+    }
+
+    form > *{
+        width: 100%
+    }
+
+    .contact-me__send-form-btn{
+        width: 30%;
+    }
 }
