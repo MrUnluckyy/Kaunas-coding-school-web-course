@@ -72,18 +72,20 @@ form > *{
 }
 
 .contact-me__send-form-btn{
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 15px;
     width: 10%;
     cursor: pointer;
     font-family: inherit;
 }
 
 .contact-me__send-form-btn:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    color: black;
+    background-color: black;
+    color: white;
     width: 11%;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 
