@@ -1,0 +1,41 @@
+/*Reseting styles section*/
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.under-construction{
+    width: 100%;
+}
+
+/*End of reseting styles section*/
+
+
+
+/*HEADER section*/
+
+/*End of HEADER section*/
+
+
+
+/*MAIN section*/
+
+/*End of MAIN section*/
+
+
+
+/*FOOTER section*/
+
+/*End of FOOTER section*/
