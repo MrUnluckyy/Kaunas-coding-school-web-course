@@ -1,5 +1,5 @@
 <?php
-    //variable for easier file directory typing.
-    $path='/php/armandos_portfolio/';
+
+    $path='/php/armandos_portfolio_php/';
 
 ?>
