@@ -13,6 +13,7 @@
         <link href="../assets/css/global.css" rel="stylesheet">
         <link href="../assets/css/about.css" rel="stylesheet">
         <link href="../assets/css/header.css" rel="stylesheet">
+        <link href ="../assets/css/logo.css" rel="stylesheet">
 
     </head>
 
@@ -25,13 +26,12 @@
 
             ?>
 
-
         <main>
             <div class="main-wrapper">
 
                 <div class="text-about-artist">
                     <div class="text-about-artist__header">
-                        <span class="text-about-artist__header-logo">armanda capaite</span>
+                        <?php include '../assets/images/logo.svg'; ?>
                     </div>
 
                     <div class="text-about-artist__paragraph">
@@ -94,8 +94,5 @@
             </div>
         </main>
         </div>
-
-
-
     </body>
 </html>

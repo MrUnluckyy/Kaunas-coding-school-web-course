@@ -76,7 +76,7 @@
                     </div>
                     <div class="about-project__return-to-all-projects-link">
                         <span>
-                            <a href="../index.php">to all projects</a>
+                            <a href="../navigation/projects.php">to all projects</a>
                         </span>
                     </div>
 

@@ -1,0 +1,32 @@
+body {
+	text-align: center;
+}
+.logo-wrapper__container {
+	height: 100vh;
+	width: 100%;
+}
+#armandos-logo {
+	animation: color-change 2s ease;
+	width: 30%;
+}
+#logo-drop-__c-letter {
+	animation: rotation 2s ease-in;
+	transform-origin: 430px 399px;
+	animation-fill-mode: forwards;
+}
+@keyframes color-change {
+	0% {
+		color: inherit;
+	}
+	100% {
+		color: gray;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(130deg);
+	}
+}

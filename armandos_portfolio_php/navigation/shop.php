@@ -27,8 +27,11 @@
 
             <main>
                 <div id="eshop-item-wrapper" class="eshop-container">
-                    <!-- 8 items per row on full screen-->
-
+                    <!--
+                        *NOTE: show 8 items per row on full screen.
+                        *TODO: using JS show 8 items if it is computer and 4 if it is mobile.
+                        *TODO: use while or for loops to add products.
+                    -->
                     <div class="selling-item">
                         <img src="../assets/images/shopping/ingrida-item-shop.jpg" alt="Illustration of Ingrida">
                         <div class="selling-item__content">
@@ -310,10 +313,6 @@
             </div>
 
         <script>
-            //TODO: add arrays for item details;
-
-
-            //Show more function
             function showMoreItems() {
                 var hiddenItems = document.querySelectorAll('.selling-item--hidden');
                 if (hiddenItems.length == 0){
@@ -328,11 +327,9 @@
 
             document.getElementById('load-more-items__btn').addEventListener('click', function () {
                 showMoreItems();
-                window.scrollBy(0, 2000);
+                window.scrollBy(0, 1440);
 
             });
-            //End of show more function
-
 
         </script>
 

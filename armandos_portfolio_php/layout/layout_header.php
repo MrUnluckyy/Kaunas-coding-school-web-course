@@ -1,17 +1,15 @@
 <?php
     include __DIR__ . '/../assets/src/env.php';
-
 ?>
-
 
 <header>
     <div class="header__main-logo-container">
-        <a href="<?php echo $path . 'index.php' ?>" >armanda capaite</a>
+        <a href="<?php echo $path . 'navigation/projects.php' ?>" >armanda capaite</a>
     </div>
 
     <nav>
         <ul class="nav__items nav__items--hiiden">
-            <li><a href="<?php echo $path . 'index.php' ?>">Projects</a></li>
+            <li><a href="<?php echo $path . 'navigation/projects.php' ?>">Projects</a></li>
             <li><a href="<?php echo $path . 'navigation/shop.php' ?>">Shop</a></li>
             <li><a href="<?php echo $path . 'navigation/about.php' ?>">About</a></li>
         </ul>
@@ -19,7 +17,7 @@
             <img class="nav-burger-menu__icon" src="<?php echo $path . 'assets/images/icons/burger-menu.svg' ?>">
             <div class="nav-burger-menu__content">
                 <ul>
-                     <li><a href="<?php echo $path . 'index.php' ?>">Projects</a></li>
+                    <li><a href="<?php echo $path . 'navigation/projects.php' ?>">Projects</a></li>
                     <li><a href="<?php echo $path . 'navigation/shop.php' ?>">Shop</a></li>
                     <li><a href="<?php echo $path . 'navigation/about.php' ?>">About</a></li>
                 </ul>

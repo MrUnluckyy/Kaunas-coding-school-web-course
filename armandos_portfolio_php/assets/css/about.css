@@ -1,43 +1,38 @@
-main{
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 5em;
-
+main {
+	height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 5em;
 }
-
-.main-wrapper{
-    width: 100%;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.main-wrapper {
+	width: 100%;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
-
-.text-about-artist{
-    overflow: hidden;
-    flex: 1 100%;
+.text-about-artist {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
 }
-
-.text-about-artist__header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+.text-about-artist__header {
+	width: 50%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
-
-.text-about-artist__header-logo{
-    color: gray;
-    font-size: 20px;
-    margin-bottom: 1em;
+.text-about-artist__header-logo {
+	color: gray;
+	font-size: 20px;
+	margin-bottom: 1em;
 }
-
-.text-about-artist__paragraph{
-    text-align: justify;
+.text-about-artist__paragraph {
+	text-align: justify;
 }
-
-
 /* TODO: show when this class will be fixed in HTML.
 .about-artist__achievements{
     display: flex;
@@ -49,65 +44,59 @@ main{
 }
 */
 
-.contact-me-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 100%;
+.contact-me-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 100%;
 }
-
-
-
-.contact-me-container--hidden{
-    display: none;
+.contact-me-container--hidden {
+	display: none;
 }
-
-form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    width: 100%;
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 100%;
 }
-
-form > *{
-    margin: 5px;
-    width: 50%;
-    border-color: rgba(0, 0, 0, 0.1);
-
+form>* {
+	margin: 5px;
+	width: 50%;
+	border-color: rgba(0, 0, 0, 0.1);
 }
-
-.contact-me__send-form-btn{
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    font-size: 15px;
-    width: 10%;
-    cursor: pointer;
-    font-family: inherit;
+.contact-me__send-form-btn {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	font-size: 15px;
+	width: 10%;
+	cursor: pointer;
+	font-family: inherit;
 }
-
-.contact-me__send-form-btn:hover{
-    background-color: black;
-    color: white;
-    width: 11%;
-    transition: 1s ease;
+.contact-me__send-form-btn:hover {
+	background-color: black;
+	color: white;
+	width: 11%;
+	transition: 1s ease;
 }
-
+.thank-for-contact-me-submision {
+	margin: 5px 0;
+}
 @media screen and (max-width: 600px) {
-    .contact-me-container{
-        justify-content: center;
-    }
-
-    form > *{
-        width: 100%
-    }
-
-    .contact-me__send-form-btn{
-        width: 30%;
-    }
-
-    .contact-me__send-form-btn:hover{
-        width: 28%;
-    }
+	.contact-me-container {
+		justify-content: center;
+	}
+	.text-about-artist__header {
+		width: 100%;
+	}
+	form>* {
+		width: 100%
+	}
+	.contact-me__send-form-btn {
+		width: 30%;
+	}
+	.contact-me__send-form-btn:hover {
+		width: 28%;
+	}
 }

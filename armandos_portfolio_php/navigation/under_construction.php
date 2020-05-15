@@ -1,6 +1,6 @@
 <?php
 
-   header("refresh:5; url=shop.php");
+   header("refresh:3; url=shop.php");
 ?>
 
 <!DOCTYPE html>
@@ -33,16 +33,17 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
     </style>
-</head>
 
-<body>
-    <div class="under-construction__message">
-        <p>:( Sorry this function is not working at the moment...</p>
-        <p>You are being redirected</p>
-        <div class="spinner-animation"></div>
-    </div>
+    </head>
 
-</body>
+
+    <body>
+        <div class="under-construction__message">
+            <p>:( Sorry this function is not working at the moment...</p>
+            <p>You are being redirected</p>
+            <div class="spinner-animation"></div>
+        </div>
+
+    </body>
 </html>
